@@ -1,0 +1,23 @@
+Anna Bochiñska, Mateusz Burbula
+
+1. Wyœwietl panel kalkulatora.
+2. User input: podano pierwsz¹ liczbê
+3. User input: wybrano znak dzia³ania
+4. User input: podano drug¹ liczbê
+5. User input: wybierano dalsze dzia³anie lub wybrano "=" lub wybrano "C" lub wybrano "CE" lub wybrano M+ lub wybrano M- lub wybrano MR lub wybrano MS
+6. Wykonaj:
+-je¿eli "=" podaj wynik tzn gdy "+" to dodaj, gdy "-" to odejmij, gdy "*" to pomnó¿, 
+gdy "/" to podziel pod warunkiem ze druga liczba nie równa sie 0,je¿eli druga liczba = 0 podaj komunikat "Nie mo¿na dzieliæ przez zero", 
+gdy "?" to wyci¹gnij pierwiatek kwadratowy pod warunkiem ze liczba jest >=0, je¿eli liczba <0 wyœwietl komunikat "nieprawid³owe dane wyjœciowe"
+-je¿eli "M+" to dodaj liczby z wyœwietlacza do wbudowanej pamiêci kalkulatora i wróæ do punktu 5
+-je¿eli "M-" to odjemij liczby z wyœwietlacza od wbudowanej pamiêci kalkulatora i wróæ do puntku 5
+-je¿eli "MR" to przywrócenie na wyœwietlacz liczby w pamiêci i wróc do punktu 3
+-je¿eli "MS" to zapisz wartoœæ z wyœwietlacza do pamiêci i wroæ do punktu 5
+-je¿eli "C" skasuj ca³e dzia³anie i wróc do pocz¹tku
+-je¿eli "CE" skasuj ostatnio wybran¹ liczbê -> wróc do punktu 4
+-je¿eli wybrano dalsze dzia³anie poka¿ wynik dotychczasowego dzia³ania i przejdz do punktu 7
+7. User input: podano liczbê
+8. User input: -> punkt 5
+9. Punkt 6
+10. Punkt 7
+11. itd.
