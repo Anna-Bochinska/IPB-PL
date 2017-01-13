@@ -1,0 +1,18 @@
+1. SELECT * FROM [Categories]
+
+2. SELECT * FROM [Customers] where Country = 'Germany'
+
+3. SELECT * FROM [OrderDetails] where Quantity > 10
+
+4. SELECT A.CustomerName, C.Quantity
+FROM Customers A, Orders B, Orderdetails C
+WHERE A.CustomerID = B.CustomerID
+And B.OrderID = C.OrderID
+
+5. SELECT A.CustomerName, A.Country, C.Quantity
+FROM Customers A, Orders B, Orderdetails C
+WHERE A.CustomerID = B.CustomerID
+And B.OrderID = C.OrderID
+Order by Country
+
+Do Niemiec Trafi³o 2015 produktów 
