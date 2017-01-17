@@ -1,0 +1,42 @@
+opcja = 1
+while opcja != 3:
+  print('Wybierz dzia³anie:')
+  print('1 -koduj')
+  print('2 - dekoduj')
+  print('3 - zakoncz')
+  opcja = int(input('Wybierz opcja: '))
+  print(opcja)
+  if opcja == 1:
+    print('koduj')
+    def szyfruj(txt):
+        stxt = ""
+        for i in range(len(txt)):
+            if ord(txt[i]) > 122 - shift:
+                stxt += chr(ord(txt[i]) + shift - 26)
+            else:
+                stxt += chr(ord(txt[i]) + shift)
+        return stxt;
+    utxt = list(input('Podaj s³owo, które ma byæ zakodowane: '))
+    shift = int(input('Jakie ma byæ przesuniêcie?'))
+    
+    
+    stxt = szyfruj(utxt)
+    print ("Ci¹g zaszyfrowany:\n", stxt)
+  
+  if opcja == 2:
+    print ('Dekoduj')
+    def deszyfruj(dtxt):
+      KLUCZ = int(input('Jakie by³o przesuniêcie?'))
+      odszyfrowany = ""
+      KLUCZM = KLUCZ % 26
+      for i in range(len(dtxt)):
+          if (ord(dtxt[i]) - KLUCZM < 97):
+              odszyfrowany += chr(ord(dtxt[i]) - KLUCZM + 26)
+          else:
+              odszyfrowany += chr(ord(dtxt[i]) - KLUCZM)
+      return odszyfrowany
+      
+    odkodowane = input("Podaj s³owo do odszyfrowania:\n")
+    print ("S³owo odszyfrowane:\n", deszyfruj(odkodowane))
+
+print ('Papa')
